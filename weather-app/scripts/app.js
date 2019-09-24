@@ -69,7 +69,7 @@ function updateLocation() {
 function updateTemp() {
     const conversion = (weatherDiv.dataset.temp * 9/5 - 459.67);
     
-    temp.innerHTML = "Temperature: " + conversion.toFixed(2);
+    temp.innerHTML = "Temperature: " + conversion.toFixed(0) + '&#7506;';
 }
 
 function updateWind() {
